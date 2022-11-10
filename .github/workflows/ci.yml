@@ -1,0 +1,20 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: php-actions/composer@v6
+
+      - name: Local development server
+        run: mkdir www && php -S 0.0.0.0:8080 -t www vendor/phpgt/webengine/go.php &
+
+      - name: Behat tests
+        uses: php-actions/behat@master
+        with:
+          config: test/behat/behat.yml
