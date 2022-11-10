@@ -1,0 +1,16 @@
+{
+	"name": "php-actions/example-behat",
+	"description": "Example project using php-actions/behat",
+
+	"require": {
+		"php": ">=8.1",
+		"phpgt/webengine": "dev-master"
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^v1.9",
+		"phpunit/phpunit": "^v9.5",
+		"behat/behat": "3.*",
+		"behat/mink-extension": "2.*",
+		"behat/mink-goutte-driver": "1.*"
+	}
+}
