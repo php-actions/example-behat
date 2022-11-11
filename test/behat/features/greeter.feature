@@ -5,7 +5,7 @@ Feature: App should greet the user
 
 	Scenario: I see a default name
 		Given I am on the homepage
-		Then I should see "Hello, you!"
+		Then I should see "Hello, you NONONONNO!"
 
 	Scenario: I see my own name
 		Given I am on the homepage
