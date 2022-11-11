@@ -10,7 +10,7 @@
 		"phpstan/phpstan": "^v1.9",
 		"phpunit/phpunit": "^v9.5",
 		"behat/behat": "*",
-		"behat/mink-extension": "*",
+		"friends-of-behat/mink-extension": "*",
 		"behat/mink-goutte-driver": "*"
 	}
 }
